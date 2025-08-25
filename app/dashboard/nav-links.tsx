@@ -4,6 +4,7 @@ import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
+  type LinkIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -12,6 +13,7 @@ import clsx from 'clsx';
 
 export default function NavLinks() {
   const pathname = usePathname();
+  const links = [{ icon: "lol", name:"lol", href:"/lol" }]
   return (
     <>
       {links.map((link) => {
